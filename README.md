@@ -1,4 +1,5 @@
 # musicfy Project 
 
-Music application/Spotify replica with custom song/artist uploads. 
+Music application with custom song/artist uploads. 
 
+Spotify replica
