@@ -19,7 +19,7 @@ header {
     /* border: 1px solid red;  */
     display: flex; 
     flex-wrap: wrap; 
-    /* overflow: hidden; */
+    overflow: hidden;
     flex-basis: 100%;
 }
 .mside { 
