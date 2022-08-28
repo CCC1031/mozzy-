@@ -93,4 +93,3 @@ play.addEventListener('click', ()=>{
             wave.classList.remove('active');
         }
 })
-
