@@ -683,4 +683,13 @@ header {
      .song-side::before {
         background-image: none; 
     }
+    .user {
+        display: none;
+    }
+    .song-side nav .search {
+       display:none; 
+    }
+    #prev, #next {
+        display:none; 
+    }
 }
