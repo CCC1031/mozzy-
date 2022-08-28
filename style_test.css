@@ -5,14 +5,17 @@
 }
 body {
     width: 100%;
-    height: 100vh;  
+    /* height: 100vh;   */
+    height: auto;  
     background-color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* display: flex;  */
     align-items: center;
     justify-content: center;
-    padding: 0%;
-    margin: 0%;
+    margin:0;
+    padding:0;
+    /* overflow-x:hidden; */
+    /* overflow-y: hidden;  */
 }
 header { 
     height: auto; 
@@ -21,6 +24,7 @@ header {
     flex-wrap: wrap; 
     overflow: hidden;
     flex-basis: 100%;
+    /* overflow-y: hidden;  */
 }
 .mside { 
     /* border: 1px solid blue;  */
@@ -665,4 +669,26 @@ header {
     height: 100%; 
     border-radius: 50%;
     position: absolute;
+}
+/* Phone size */
+@media (max-width: 518px) {  
+    .mside {
+        display: none; 
+    }
+     html, body {
+        margin: 0;
+        padding: 0; 
+        overflow-y: hidden;
+     }
+     .song-side::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 300px; 
+        right: -400px; 
+        background-image: none; 
+        z-index: -1;
+    }
 }

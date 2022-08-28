@@ -139,5 +139,12 @@ Array.from(document.getElementsByClassName('playlistPlay')).forEach((element)=>{
        music.src = `audio/${index}.mp3`;
        music.play();
     })
-})
+});
+
+// play.addEventListener('click', ()=>{
+//        if (music.paused || music.currentTime <=0) {
+//            music.play();
+//        }
+    
+// })
 
