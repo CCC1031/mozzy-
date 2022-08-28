@@ -542,6 +542,7 @@ header {
     height: 250px; 
     /* border: 1px solid white;  */
     margin: auto; 
+    overflow-y: hidden;
 }
 .song-side .popular-song .h4 {
     display: flex; 
@@ -693,3 +694,9 @@ header {
         display:none; 
     }
 }
+
+
+#one{
+    cursor: pointer;; 
+}
+
