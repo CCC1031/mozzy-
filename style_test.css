@@ -28,7 +28,7 @@ header {
 }
 .mside { 
     /* border: 1px solid blue;  */
-    width: 25%;
+    max-width: 25%;
 }
  .menu-side { 
     /* position: relative;  */
