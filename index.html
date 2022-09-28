@@ -11,16 +11,17 @@
     <title>Music</title>
 </head>
 <body>
-    <header id="container">
+    <header class="container">
         <div class="mside">
             <div class="menu-side">
-            <h1>Playlist</h1>
-            <div class="playlist">
-                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
-                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
-                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
-            </div>
-            <div class="menu-song">
+                <h1>Playlist</h1>
+                <div class="playlist">
+                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+                </div>
+             
+                <div class="menu-song">
                 <!-- <li class="songitem">
                     <span>01</span>
                     <img src="myway.jpeg" alt="way" class="first">
@@ -72,13 +73,13 @@
                         <i class="bi playlistPlay bi-play-circle-fill" id="6"></i>
                     </h5>
                 </li> -->
+                    </div>
             </div>
-        </div>
         </div>
         <!-- Comment -- Not takingup whole page  -->
         <!-- <div id="container2"> -->
             <!--Right Side-->
-            <div class="song-side">
+        <div class="song-side">
                 <nav>
                 <ul>
                     <li>Discover <span></span></li>
@@ -104,15 +105,16 @@
                     <button>PLAY</button>
                     <button>FOLLOW</button>
                 </div>
-                    </div>
+                    
                 <div class="popular-song">
-                <div class="h4">
+                    <div class="h4">
                      <h4>Popular Songs</h4>
-                    <div class="arrows">
+                     <div class="arrows">
                         <i class="bi bi-arrow-left-short" id="left-arrow"></i>
                         <i class="bi bi-arrow-right-short" id="right-arrow"></i>
                     </div>
                  </div>
+                 
                 <div class="pop-song">
                     <ul>
                         <li class="songitem"> <!--I changed song-item to songitem-->
@@ -249,8 +251,9 @@
                     </ul>
                     </div>
                     </div>
-                </div>
             </div>
+        </div>
+    </header>
                     <!--Bottom side-->
         <div class="song-side2">
             <div class="wave">
@@ -265,9 +268,9 @@
             </h5>
             <!-- Comment -- Icons are not showing up (Not sure why) -->
             <div class="icon">
-                <i id="prev" class="bi bi-skip-start-fill" class="but"></i>
-                <i id="play" class="bi bi-play-fill" ></i>
-                <i id="next" class="bi bi-skip-end-fill"class="next"></i>
+                <i id="prev" class="bi bi-skip-start-fill"></i>
+                <i id="play" class="bi bi-play-fill"></i>
+                <i id="next" class="bi bi-skip-end-fill"></i>
             </div>
             <span class="currentStart">0:00</span>
             <div class="bar">
@@ -289,9 +292,9 @@
             <div class="vol-bar"></div>
             <div class="dot" id="vol-dot"></div>
           </div>
-    </div>
+        </div>
 
-    </header>
+   
 
     <!-- <script src="script.js"></script> -->
     <script src="script2.js"></script>
