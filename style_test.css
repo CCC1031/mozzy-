@@ -391,20 +391,28 @@ body {
     top: -6px; 
     box-shadow: inset 0px 0px 3px #36e2ec; 
 }
+
+.song_image {
+    object-fit: contain;
+}
 .song-side {
     z-index: 2; 
 }
-.song-side::before {
+.song-side::after {
     content: '';
     position: absolute;
     width: 100%;
     background-size:contain;
     background-repeat: no-repeat;
     height: 300px; 
-    right: -400px; 
+    margin-left: 800px; 
     background-image: url("img/coldplay.png");
     z-index: -1;
+    position:fixed;
+    top: 0; 
 }
+
+
 .song-side nav {
     width: 90%;
     height: 10%;
@@ -487,7 +495,7 @@ body {
     cursor: pointer;
 }
 .song-side .content {
-    width: 90%;
+    /* width: 90%; */
     height: 25%; 
     margin: auto; 
     /* border: 1px solid white;  */
@@ -504,7 +512,7 @@ body {
     color: gray;  
 }
 .song-side .content .button{
-    margin-top: 27px;
+    margin: 27px 65px;
     color: gray;
 }
 /* PLAY & FOLLOW BUTTONS */
@@ -567,7 +575,8 @@ body {
     margin-bottom: 0px; 
     /* display: flex;  */
     overflow-x: auto;
-    scroll-behavior:smooth;   
+    scroll-behavior:smooth; 
+    padding-top: 10px; 
 }
 .popular-song .pop-song::-webkit-scrollbar {
     display: none;
