@@ -11,27 +11,18 @@ body {
     justify-content: center;
     margin:0;
     padding:0;
-    border: 1px solid red; 
-
 }
 .container { 
     height: 100%; 
     width: 100%; 
-    /* border: 1px solid red;  */
     display: flex; 
     flex-wrap: wrap; 
     overflow: hidden;
-    /* flex-basis: 100%; */
 }
 .mside { 
-    /* border: 1px solid blue;  */
     max-width: 25%;
 }
  .menu-side { 
-    /* position: relative;  */
-    /* flex-basis: 15%; */
-    /* flex-grow: 0; */
-    /* flex-shrink: 0; */
     background-color: black;
     color: #fff;
 }
@@ -39,21 +30,16 @@ body {
     position: relative; 
     display: inline-block;
     width: 75%; 
-    /* border: 1px solid #fff;  */
-    /* background-color: #111727; */
     background:linear-gradient(159deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 52%, rgba(40,40,40,1) 100%);
     box-shadow: 5px 0px 2px #090f1f;
     color: #fff;
-    /* flex-basis: 55%; */
     flex-grow: 1;
     flex-shrink: 1;
 }
 .song-side2 {
     background: linear-gradient(159deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
-    /* background: white; */
     box-shadow: 0px 3px 8px #090f1f;
     height: 300px;
-    border: 1px solid #fff; 
     position: fixed ;
     width: 100%; 
     bottom: 0; 
@@ -66,22 +52,18 @@ body {
 }
 @media (max-width: 1200px) {
     .song-side .menu-side{ 
-        /* flex-basis: 75%; */
         }
 }
 @media (max-width: 1000px) {
     .menu-side { 
-        /* flex-basis: 15%; */
         }
 }
 @media (max-width: 480px) {
   .menu-side { 
-    /* display: none; */
     }
 }
  .menu-side, .playlist {
     margin: 40px 0px 0px 20px;
-    /* flex-basis: 25%; */
 }
 .menu-side, .playlist h4 {
     font-size: 14px; 
@@ -106,7 +88,6 @@ body {
     height: 4px;
     border: 2px solid #4c5262;
     border-radius: 50%;
-    /* top:-4px; */
     bottom: 5px;
 }
 .menu-side .playlist h4:hover span::before {
@@ -127,7 +108,6 @@ body {
 }
 .menu-side .menu-song {
     height: 400px;
-    /* border: 1px solid #fff; */
     margin-top: 40px; 
 
 }
@@ -178,21 +158,17 @@ body {
     border: 1px solid white;
 }
 
-            /* Bottom of page  */
+/* Bottom of page  */
 .song-side2 {
     display: flex; 
     align-items: center;
     padding: 0px 20px; 
-    /* border: 1px solid #fff; */
     flex-basis: 100%;
-    /* flex-grow: 0; */
-    /* flex-shrink: 0; */
     height: 80px; 
  }
 .song-side2 .wave {
     width: 30px;
     height: 30px;
-    /* border: 1px solid #fff; */
     padding-bottom: 5px; 
     display: flex;
     align-items: flex-end;
@@ -253,31 +229,15 @@ body {
 }
 
 .song-side2 .icon {
-    /* position: relative; */
-    /* font-size: 90px; */
     color: white; 
-    /* border: 1px solid white; */
-    /* width: 100px;  */
-    /* height: 30px;  */
-    /* display: flex; */
-    /* margin: 0px 20px 0px 20px;  */
-    /* justify-content: space-between; */
     cursor: pointer;
 }
 /* This actually manipulates skip/play buttons */
 .song-side2 .icon .bi { 
-    /* position: absolute;  */
-    /* color: white; */
     font-size: 25px;
-    /* outline: none;   */
-    /* top: -0px;  */
-    /* left: -20px;  */
-    /* padding: 1px 3px; */
-    /* cursor: pointer; */
 }
 
 .song-side2 .icon .bi:nth-child(2) {
-    /* border: 1px solid rgba(217, 217, 227, 0.2); */
     outline: none; 
     border-radius: 50%; 
     padding: 1px 3px 0px 6px;
@@ -417,7 +377,6 @@ body {
     width: 90%;
     height: 10%;
     margin: auto;
-    /* border: 1px solid white;  */
     display: flex;  
     align-items: center;
     justify-content: space-between;
@@ -495,10 +454,8 @@ body {
     cursor: pointer;
 }
 .song-side .content {
-    /* width: 90%; */
     height: 25%; 
     margin: auto; 
-    /* border: 1px solid white;  */
     padding-top: 20px; 
 }
 /* lyrics */
@@ -550,14 +507,12 @@ body {
 }
 /* Popular Songs Section */
 .song-side .songitem img {
-    /* border: 1px solid white;  */
-    /* height: 200px; */
     border-radius: 10px;
 }
 .song-side .popular-song {
     width: 90%; 
     height: 250px; 
-    /* border: 1px solid white;  */
+    
     margin: auto; 
     overflow-y: hidden;
 }
@@ -673,7 +628,6 @@ body {
    position: relative;
    width: 100px;
    height: 100px; 
-   /* background-color: white; */
    border-radius: 50%;
    margin-right: 20px;
    cursor: pointer;
@@ -712,8 +666,6 @@ body {
         display:none; 
     }
 }
-
-
 #one{
     cursor: pointer;; 
 }
