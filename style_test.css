@@ -501,6 +501,12 @@ body {
     /* border: 1px solid white;  */
     padding-top: 20px; 
 }
+/* lyrics */
+.lyrics {
+    margin: 0px 65px;
+    
+}
+
 /* PLAY & FOLLOW BUTTON */
 .song-side .content h1{
     font-size: 20px;
