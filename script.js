@@ -113,11 +113,11 @@ play.addEventListener('click', ()=>{
         } 
         else {
             music.pause();
-            play.classList.add('bi-play-fill');
             play.classList.remove('bi-pause-fill');
+            play.classList.add('bi-play-fill');
             wave.classList.remove('active');
         }
-})
+});
 
 // const makeallPlay = () => {
 //     Array.from(document.getElementsByClassName('playlistPlay')).forEach((element)=>{
@@ -130,21 +130,21 @@ play.addEventListener('click', ()=>{
 // let song_image = document.getElementById('song_image');
 // let song_title = document.getElementById('song_title');
 
-Array.from(document.getElementsByClassName('playlistPlay')).forEach((element)=>{
-    element.addEventListener('click', (e)=>{
-       index = e.target.id;
-       makeallPlay();
-       e.target.classList.remove('bi-play-circle-fill');
-       e.target.classList.add('bi-pause-circle-fill');
-       music.src = `audio/${index}.mp3`;
-       music.play();
-    })
-});
+// Array.from(document.getElementsByClassName('playlistPlay')).forEach((element)=>{
+//     element.addEventListener('click', (e)=>{
+//        index = e.target.id;
+//        makeallPlay();
+//        e.target.classList.remove('bi-play-circle-fill');
+//        e.target.classList.add('bi-pause-circle-fill');
+//        music.src = `audio/${index}.mp3`;
+//        music.play();
+//     })
+// });
 
-play.addEventListener('click', ()=>{
-       if (music.paused || music.currentTime <=0) {
-           music.play();
-       }
+// play.addEventListener('click', ()=>{
+//        if (music.paused || music.currentTime <=0) {
+//            music.play();
+//        }
     
-})
+// })
 

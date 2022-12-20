@@ -167,3 +167,13 @@ function playPause() {
 
     }
 }
+
+// let audio2 = document.getElementById('audio2');
+// let next = document.getElementById('next');
+
+// function next() {
+//     if(count == 0) {
+//         count = 1; 
+//         audio2.play(); 
+//     }
+// }
