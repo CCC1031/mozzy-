@@ -15,11 +15,11 @@
         <div class="mside">
             <div class="menu-side">
                 <h1>Playlist</h1>
-                <div class="playlist">
-                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
-                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
-                    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
-                </div>
+                    <div class="playlist">
+                        <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                        <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                        <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+                     </div>
              
                 <div class="menu-song">
                 <!-- <li class="songitem">
@@ -78,7 +78,7 @@
         </div>
         <!-- Comment -- Not takingup whole page  -->
         <!-- <div id="container2"> -->
-            <!--Right Side-->
+            <!--Main page-->
         <div class="song-side">
                 <nav>
                 <ul>
@@ -122,20 +122,19 @@
                     <ul>
                         <li class="songitem"> <!--I changed song-item to songitem-->
                             <div class="img-play">
-                             <img id="img" src="img/Ed.jpeg" alt="music-cover">
-                             <i id="one" class="bi bi-play-circle-fill" id="7"></i>
+                                <img id="img" src="img/Ed.jpeg" alt="music-cover">
+                                <i id="one" class="bi bi-play-circle-fill" id="7"></i>
                             </div>
                           
                             <h5>Ed Sheeran <br>
-                            <div class="subtitle"></div>
+                                <div class="subtitle"></div>
                             <!-- <i class="bi playlistPlay bi-play-circle-fill" id="6"></i> -->
                             </h5>
                         </li>
                         <li class="songitem">
                             <div class="img-play">
                                 <img src="img/adele.jpeg" alt="way">
-                            <i id="first" class="bi playlistPlay bi-play-circle-fill" id="8"></i>
-
+                                <i id="first" class="bi playlistPlay bi-play-circle-fill" id="8"></i>
                             </div>
                                 <h5> Adele <br>
                                 <div class="subtitle"></div>
@@ -271,8 +270,11 @@
             </h5>
             <!-- Comment -- Icons are not showing up (Not sure why) -->
             <div class="icon">
+                <audio id="audio">
+                    <source src="audio/clocks.mp3">
+                </audio>
                 <i id="prev" class="bi bi-skip-start-fill"></i>
-                <i id="play" class="bi bi-play-fill"></i>
+                <i id="play" onclick="playPause()" class="bi bi-play-fill"></i>
                 <i id="next" class="bi bi-skip-end-fill"></i>
             </div>
             <span class="currentStart">0:00</span>

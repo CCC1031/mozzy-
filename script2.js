@@ -96,57 +96,74 @@
 //         }
 // });
 
-const prevBtn = document.getElementById('prev');
-const playBtn = document.getElementById('play');
+// const prevBtn = document.getElementById('prev');
+// const playBtn = document.getElementById('play');
 
 
 //Song titles
-const songs = ['all', 'anbr', 'Cap', 'clocks'];
+// const songs = ['all', 'anbr', 'Cap', 'clocks'];
 
 //Track of song
-let songIndex = 2; 
+// let songIndex = 2; 
 
 //Initially load song detail in DOM
-loadSong(songs[songIndex]);
+// loadSong(songs[songIndex]);
 
 //update song details  last line (cover.src = `images/${song}.jpg)
-function loadSong(song) {
-    title.innerText = song; 
-    Audio.src = `auido/${song}.mp3`;
-}
+// function loadSong(song) {
+//     title.innerText = song; 
+//     Audio.src = `auido/${song}.mp3`;
+// }
 
 // play song
-function playSong() {
-    audio.play();
-}
+// function playSong() {
+//     audio.play();
+// }
 
 
 
-playBtn.addEventListener('click', ()=>{
-            if ('') {
-                pauseSong();
-            } 
-            else {
-                playSong();
-            }
-    });
+// playBtn.addEventListener('click', ()=>{
+//             if ('') {
+//                 pauseSong();
+//             } 
+//             else {
+//                 playSong();
+//             }
+//     });
 
 
 
 
 //Previous Song 
-function prevSong() {
-    songIndex--;
+// function prevSong() {
+//     songIndex--;
 
-    if(songIndex < 0) {
-        songIndex = songs.length - 1;
-    }
-    loadSong(songs[songIndex]);
+//     if(songIndex < 0) {
+//         songIndex = songs.length - 1;
+//     }
+//     loadSong(songs[songIndex]);
 
-    playSong();
+//     playSong();
 
-}
+// }
 
 //change song 
-prevBtn.addEventListener('click', prevSong);
-nextBtn.addEventListener('click', nextSong);
+// prevBtn.addEventListener('click', prevSong);
+// nextBtn.addEventListener('click', nextSong);
+
+let audio = document.getElementById('audio');
+let play = document.getElementById('play');
+let count = 0; 
+
+function playPause() {
+    if(count == 0) {
+        count = 1; 
+        audio.play(); 
+        play.className = "bi bi-pause-fill";
+    } else {
+        count = 0; 
+        audio.pause();
+        play.className = "bi bi-play-fill";
+
+    }
+}
