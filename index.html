@@ -258,27 +258,27 @@
     </header>
                     <!--Bottom side-->
         <div class="song-side2">
-            <div class="wave">
+            <div class="wave" id="wave">
                 <div class="wave1"></div>
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <audio src="audio/wonder.mp3" id="music-player"></audio>
-            <img id="song_image" src="img/coldplay.png" alt="way">
+            <audio src="audio/all.mp3" id="audio"></audio>
+            <img id="playing_image" src="img/coldplay.png" alt="way">
             <h5 id="title" > Clocks <br>
-                <div class="subtitle" id="song-artist">Coldplay</div>
+                <div class="subtitle" id="song-title">Coldplay</div>
             </h5>
             <!-- Comment -- Icons are not showing up (Not sure why) -->
             <div class="icon">
                 <audio id="audio">
                     <source src="audio/clocks.mp3">
                 </audio>
-                <audio id="audio2">
+                <!-- <audio id="audio2">
                     <source src="audio/all.mp3">
-                </audio>
-                <i id="prev" class="bi bi-skip-start-fill"></i>
-                <i id="play" onclick="playPause()" class="bi bi-play-fill"></i>
-                <i id="next" onclick="playPause()" class="bi bi-skip-end-fill"></i>
+                </audio> -->
+                <i id="prevButton" class="bi bi-skip-start-fill"></i>
+                <i id="playButton" onclick="playSong()" class="bi bi-play-fill"></i>
+                <i id="skipButton" class="bi bi-skip-end-fill"></i>
             </div>
             <span class="currentStart">0:00</span>
             <div class="bar">
@@ -304,10 +304,11 @@
 
    
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!-- <script src="script2.js"></script> -->
-    <!-- <script src="scripttest.js"></script> -->
-    <!-- <script src="script1.js"></script> -->
+    <script src="scripttest.js"></script>
+
+  
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
