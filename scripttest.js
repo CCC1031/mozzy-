@@ -4,15 +4,33 @@ const songList = [
     'audio/cap.mp3'
   ];
 
-//   'path/to/song2.mp3',
-//   'path/to/song3.mp3'
-
   let currentSong = 0;
   
+  const artistTitle = [
+    {title: 'all',
+     artist: 'Gains' ,
+    },
+    {title: 'anbr',
+     artist: 'Leoo' ,
+    },
+    {title: 'clocks',
+     artist: 'Coldplay',
+    },
+  ]
+
   const audioElement = new Audio();
   audioElement.src = songList[currentSong];
   audioElement.load();
   
+  const songTitle = document.getElementById('song-title');
+  const songArtist = document.getElementById('song-artist');
+
+  function songInfo() {
+    songTitle.textContent = artistTitle[currentSong].title; 
+  }
+
+  
+
   const playButton = document.getElementById('playButton');
   const skipButton = document.getElementById('skipButton');
   const prevButton = document.getElementById('prevButton');
@@ -44,6 +62,7 @@ const songList = [
     playButton.classList.add('bi-pause-fill');
     audioElement.load();
     audioElement.play();
+    songInfo(); 
     
   });
   
@@ -65,3 +84,24 @@ const songList = [
 //   audioElement.addEventListener('ended', function() {
 //     playButton.textContent = 'Play';
 //   });
+
+
+// const progressBar = document.getElementById('progressBar');
+
+// audioElement.addEventListener('timeupdate', function() {
+//   const progress = audioElement.currentTime / audioElement.duration;
+//   progressBar.style.width = (progress * 100) + '%';
+// });
+
+// progressBar.addEventListener('click', function(event) {
+//     const progress = (event.clientX - this.offsetLeft) / this.offsetWidth;
+//     audioElement.currentTime = progress * audioElement.duration;
+//   });
+  
+
+//   audioElement.addEventListener('durationchange', function() {
+//     progressBar.style.width = '0%';
+//   });
+  
+
+

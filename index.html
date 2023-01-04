@@ -265,8 +265,8 @@
             </div>
             <audio src="audio/all.mp3" id="audio"></audio>
             <img id="playing_image" src="img/coldplay.png" alt="way">
-            <h5 id="title" > Clocks <br>
-                <div class="subtitle" id="song-title">Coldplay</div>
+            <h5 id="song-title" > Clocks <br>
+                <div class="subtitle" id="song-artist">Coldplay</div>
             </h5>
             <!-- Comment -- Icons are not showing up (Not sure why) -->
             <div class="icon">
@@ -281,11 +281,15 @@
                 <i id="skipButton" class="bi bi-skip-end-fill"></i>
             </div>
             <span class="currentStart">0:00</span>
-            <div class="bar">
+            <!-- <div class="bar">
                 <input type="range" id="seek" min="0" value="0" max="100">
                 <div class="bar2" id="bar2"></div>
                 <div class="dot"></div>
-            </div>
+            </div> -->
+            <div id="progressBar"></div>
+
+
+            
             <span class="currentEnd">0:00</span>
        <!-- Still figuring out master play / song-side 2-->
             <!-- <div class="master-play"> H
