@@ -57,7 +57,7 @@ const songList = [
     } else {
         audioElement.pause();
         mainPlayButton.textContent = 'PLAY';
-        
+
         // mainPlayButton.classList.remove('bi-pause-fill');
         // mainPlayButton.classList.add('bi-play-fill');
     }
@@ -100,22 +100,23 @@ const songList = [
 //   });
 
 
-// const progressBar = document.getElementById('progressBar');
+const progressBar = document.getElementById('progressBar');
 
-// audioElement.addEventListener('timeupdate', function() {
-//   const progress = audioElement.currentTime / audioElement.duration;
-//   progressBar.style.width = (progress * 100) + '%';
-// });
+audioElement.addEventListener('timeupdate', function() {
+  const progress = audioElement.currentTime / audioElement.duration;
+  progressBar.style.width = (progress * 100) + '%';
+});
 
-// progressBar.addEventListener('click', function(event) {
-//     const progress = (event.clientX - this.offsetLeft) / this.offsetWidth;
-//     audioElement.currentTime = progress * audioElement.duration;
-//   });
+progressBar.addEventListener('click', function(event) {
+    const progress = (event.clientX - this.offsetLeft) / this.offsetWidth;
+    audioElement.currentTime = progress * audioElement.duration;
+  });
   
 
-//   audioElement.addEventListener('durationchange', function() {
-//     progressBar.style.width = '0%';
-//   });
-  
+  audioElement.addEventListener('durationchange', function() {
+    const progressPercent = (currentTime / duration) * 100; 
+    // progressBar.style.width = '0%';
+    progressBar.style.width = `${progressPercent}%`;
+  });
 
 

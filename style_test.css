@@ -682,3 +682,20 @@ body {
     cursor: pointer;; 
 }
 
+.bar { 
+    background-color: white;
+    border-radius: 5px;
+    height: 5px; 
+    width: 100%; 
+    cursor: pointer;
+}
+
+.progressBar { 
+    background-color: rgb(162, 21, 37);
+    color: white; 
+    border-radius: 5px;
+    height:5px; 
+    width: 40%; 
+    transition: width 0.1s linear; 
+}
+
