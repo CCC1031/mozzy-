@@ -366,7 +366,7 @@ body {
     background-repeat: no-repeat;
     height: 300px; 
     margin-left: 800px; 
-    background-image: url("img/coldplay.png");
+    /* background-image: url("img/coldplay.png"); */
     z-index: -1;
     position:fixed;
     top: 0; 
