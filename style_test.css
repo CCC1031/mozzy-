@@ -464,7 +464,7 @@ body {
     
 }
 
-/* PLAY & FOLLOW BUTTON */
+/* PLAY & NEXT BUTTON */
 .song-side .content h1{
     font-size: 20px;
     font-weight: 500;
@@ -490,11 +490,14 @@ body {
     background: none;
     transition: 1s ease; 
 }
+
+#mainNextButton {
+    margin-left: 5px; 
+}
 .song-side .content .button button:hover{
     background: #36e2ec;
     border: 2px solid #36e2ec; 
     color: white; 
-
 }
 .song-side .content .button button:nth-child(2){
     border: 2px solid #36e2ec;

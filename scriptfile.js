@@ -52,14 +52,13 @@ const songList = [
     if (audioElement.paused) {
         audioElement.play();
         mainPlayButton.textContent = 'PAUSE';
-        // mainPlayButton.classList.remove('bi-play-fill');
-        // mainPlayButton.classList.add('bi-pause-fill');
+        playButton.classList.remove('bi-play-fill');
+        playButton.classList.add('bi-pause-fill');
     } else {
         audioElement.pause();
         mainPlayButton.textContent = 'PLAY';
-
-        // mainPlayButton.classList.remove('bi-pause-fill');
-        // mainPlayButton.classList.add('bi-play-fill');
+        playButton.classList.remove('bi-pause-fill');
+        playButton.classList.add('bi-play-fill');
     }
   });
 
@@ -121,7 +120,6 @@ progressBar.addEventListener('click', function(event) {
     progressBar.style.width = `${progressPercent}%`;
   });
 
-
 function clickProgress(e) {
   const width = bar.clientWidth;
   const clickX = e.offsetX; 
@@ -131,5 +129,10 @@ audioElement.currentTime = (clickX / width) * duration;
 
 }
 
+bar.addEventListener('click', clickProgress);
 
-bar.addEventListener('click', clickProgress)
+document.querySelector("button");
+
+
+
+
