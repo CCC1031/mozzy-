@@ -665,7 +665,7 @@ body {
     .song-side nav .search {
        display:none; 
     }
-    .currentStart, .currentEnd, .vol {
+    .bar {
         display: none;
     }
 
@@ -679,6 +679,15 @@ body {
     .audio-buttons {
         margin-left: 10px;
 
+    }
+    .song-side2 {
+        background: linear-gradient(159deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+        box-shadow: 0px 3px 8px #090f1f;
+        height: 50px;
+        position: fixed ;
+        width: 100%; 
+        bottom: 0; 
+        z-index: 2;
     }
 }
 #one{
