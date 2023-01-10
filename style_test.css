@@ -671,9 +671,11 @@ body {
         margin-right: 10px;
         width: 100px;
         height: 150px;
+
     }
     .audio-buttons {
-        margin-left: 70px;
+        margin-left: 10px;
+
     }
 }
 #one{
