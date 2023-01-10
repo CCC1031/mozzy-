@@ -662,8 +662,18 @@ body {
     .song-side nav .search {
        display:none; 
     }
-    #prev, #next {
-        display:none; 
+    .currentStart, .currentEnd, .vol {
+        display: none;
+    }
+
+    #playButton, #skipButton {
+        display: inline; 
+        margin-right: 10px;
+        width: 100px;
+        height: 150px;
+    }
+    .audio-buttons {
+        margin-left: 140px;
     }
 }
 #one{
