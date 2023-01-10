@@ -33,7 +33,7 @@ const songList = [
 
   const playButton = document.getElementById('playButton');
   const skipButton = document.getElementById('skipButton');
-  const prevButton = document.getElementById('prevButton');
+  const mainPlayButton = document.getElementById('mainPlayButton');
 
   
   playButton.addEventListener('click', function() {
@@ -48,6 +48,20 @@ const songList = [
     }
   });
 
+  mainPlayButton.addEventListener('click', function() {
+    if (audioElement.paused) {
+        audioElement.play();
+        mainPlayButton.textContent = 'PAUSE';
+        // mainPlayButton.classList.remove('bi-play-fill');
+        // mainPlayButton.classList.add('bi-pause-fill');
+    } else {
+        audioElement.pause();
+        mainPlayButton.textContent = 'PLAY';
+        
+        // mainPlayButton.classList.remove('bi-pause-fill');
+        // mainPlayButton.classList.add('bi-play-fill');
+    }
+  });
 
   
 //   wave.classList.add('active');
