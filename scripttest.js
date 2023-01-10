@@ -101,6 +101,8 @@ const songList = [
 
 
 const progressBar = document.getElementById('progressBar');
+const bar = document.getElementById('bar');
+
 
 audioElement.addEventListener('timeupdate', function() {
   const progress = audioElement.currentTime / audioElement.duration;
@@ -120,3 +122,14 @@ progressBar.addEventListener('click', function(event) {
   });
 
 
+function clickProgress(e) {
+  const width = bar.clientWidth;
+  const clickX = e.offsetX; 
+  const duration = audioElement.duration; 
+
+audioElement.currentTime = (clickX / width) * duration; 
+
+}
+
+
+bar.addEventListener('click', clickProgress)

@@ -683,11 +683,12 @@ body {
 }
 
 .bar { 
-    background-color: white;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
-    height: 5px; 
+    height: 15px; 
     width: 100%; 
     cursor: pointer;
+    position: relative;
 }
 
 .progressBar { 
@@ -697,5 +698,6 @@ body {
     height:5px; 
     width: 40%; 
     transition: width 0.1s linear; 
+    position: relative;
 }
 
