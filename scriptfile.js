@@ -34,6 +34,7 @@ const songList = [
   const playButton = document.getElementById('playButton');
   const skipButton = document.getElementById('skipButton');
   const mainPlayButton = document.getElementById('mainPlayButton');
+  let wave = document.getElementsByClassName('wave')[0];
 
   
   playButton.addEventListener('click', function() {
@@ -41,10 +42,12 @@ const songList = [
         audioElement.play();
         playButton.classList.remove('bi-play-fill');
         playButton.classList.add('bi-pause-fill');
+        wave.classList.add('active');
     } else {
         audioElement.pause();
         playButton.classList.remove('bi-pause-fill');
         playButton.classList.add('bi-play-fill');
+        wave.classList.remove('active');
     }
   });
 
@@ -54,11 +57,13 @@ const songList = [
         mainPlayButton.textContent = 'PAUSE';
         playButton.classList.remove('bi-play-fill');
         playButton.classList.add('bi-pause-fill');
+        wave.classList.add('active');
     } else {
         audioElement.pause();
         mainPlayButton.textContent = 'PLAY';
         playButton.classList.remove('bi-pause-fill');
         playButton.classList.add('bi-play-fill');
+        wave.classList.remove('active');
     }
   });
 
