@@ -7,7 +7,7 @@ const songList = [
   let currentSong = 0;
   
   const artistTitle = [
-    {title: 'all',
+    {title: 'Can',
      artist: 'Gains',
      image: 'img/anbr.jpeg'
     },
@@ -20,11 +20,6 @@ const songList = [
      image:'img/swift.jpeg'
     },
   ]
-
-  const artistImage = [
-    {image: 'img/bruno.jpeg'}, {image:'img/swift.jpeg'}, 
-  ];
-
 
   const audioElement = new Audio();
   audioElement.src = songList[currentSong];
