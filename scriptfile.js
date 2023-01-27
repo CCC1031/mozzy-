@@ -1,24 +1,39 @@
 const songList = [
-    'audio/all.mp3',
-    'audio/anbr.mp3',
-    'audio/cap.mp3'
+    'audio/Speedofsound.mp3',
+    'audio/Can I Kick It.mp3',
+    'audio/Daylight.mp3',
+    'audio/Diary.mp3',
+    'audio/clocks.mp3',
+    'audio/sneakers.mp3'
   ];
 
   let currentSong = 0;
   
   const artistTitle = [
-    {title: 'Can',
-     artist: 'Gains',
-     image: 'img/anbr.jpeg'
-    },
-    {title: 'anbr',
-     artist: 'Leoo',
-     image: 'img/bruno.jpeg'
-    },
-    {title: 'clocks',
+    {title: 'Speed of Sound', 
      artist: 'Coldplay',
-     image:'img/swift.jpeg'
+     image: 'img/cold2.png'
     },
+    {title: 'Can I Kick It',
+     artist: 'A Tribe Called Quest',
+     image: 'img/Tribecalled.jpeg'
+    },
+    {title: 'Daylight',
+     artist: 'Matt and Kim',
+     image:'img/M&K.jpeg'
+    },
+    {title: 'Diary',
+     artist: 'Alicia Keys',
+     image:'img/keys.jpeg'
+    },
+    {title: 'Clocks',
+     artist: 'Coldplay',
+     image:'img/coldplay1.jpeg'
+    },
+    {title: 'Sneakers',
+    artist: 'Sero',
+    image:'img/sero.jpeg'
+   },
   ]
 
   const audioElement = new Audio();
@@ -42,11 +57,12 @@ const songList = [
 
   const playButton = document.getElementById('playButton');
   const skipButton = document.getElementById('skipButton');
+  const mainSkipButton = document.getElementById('mainNextButton');
   const mainPlayButton = document.getElementById('mainPlayButton');
   let wave = document.getElementsByClassName('wave')[0];
 
   
-  playButton.addEventListener('click', function() {
+  const playMain = playButton.addEventListener('click', function() {
     if (audioElement.paused) {
         audioElement.play();
         playButton.classList.remove('bi-play-fill');
@@ -76,10 +92,12 @@ const songList = [
     }
   });
 
+  // const mainSkipButton = document.getElementById('mainNextButton');
+
+  mainSkipButton.addEventListener('click', skipAudio);
+  skipButton.addEventListener('click', skipAudio);
   
-//   wave.classList.add('active');
-  
-  skipButton.addEventListener('click', function() {
+  function skipAudio(audio) {
     currentSong++;
     if (currentSong >= songList.length) {
       currentSong = 0;
@@ -90,11 +108,12 @@ const songList = [
     audioElement.load();
     audioElement.play();
     songInfo(); 
-  });
-  
+  };
+
   audioElement.addEventListener('ended', function() {
     playButton.textContent = 'Play';
   });
+
 //   prevButton.addEventListener('click', function() {
 //     currentSong++;
 //     if (currentSong <= songList.length) {
