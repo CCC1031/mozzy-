@@ -11,7 +11,6 @@ const music = new Audio('audio/clocks.mp3');
 // let play = document.getElementById('play'); 
 
 
-
 //Song titles
 const songs = ['all', 'anbr', 'cap', 'clocks'];
 
@@ -22,7 +21,6 @@ let songIndex = 0;
 loadSong(songs[songIndex]);
 
 // play song
-
 
 // let wave = document.getElementsByClassName('wave')[0];
 

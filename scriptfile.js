@@ -8,15 +8,23 @@ const songList = [
   
   const artistTitle = [
     {title: 'all',
-     artist: 'Gains' ,
+     artist: 'Gains',
+     image: 'img/anbr.jpeg'
     },
     {title: 'anbr',
-     artist: 'Leoo' ,
+     artist: 'Leoo',
+     image: 'img/bruno.jpeg'
     },
     {title: 'clocks',
      artist: 'Coldplay',
+     image:'img/swift.jpeg'
     },
   ]
+
+  const artistImage = [
+    {image: 'img/bruno.jpeg'}, {image:'img/swift.jpeg'}, 
+  ];
+
 
   const audioElement = new Audio();
   audioElement.src = songList[currentSong];
@@ -24,12 +32,18 @@ const songList = [
   
   const songTitle = document.getElementById('song-title');
   const songArtist = document.getElementById('song-artist');
+  const musicImage = document.getElementById('playing-image');
+
 
   function songInfo() {
     songTitle.textContent = artistTitle[currentSong].title; 
+    songArtist.textContent = artistTitle[currentSong].artist;
+    musicImage.src = artistTitle[currentSong].image; 
   }
-
-  
+ 
+  // function songImage() {
+  //   musicImage.classList.add.artistImage[currentSong];
+  // } 
 
   const playButton = document.getElementById('playButton');
   const skipButton = document.getElementById('skipButton');
@@ -81,14 +95,11 @@ const songList = [
     audioElement.load();
     audioElement.play();
     songInfo(); 
-    
   });
   
   audioElement.addEventListener('ended', function() {
     playButton.textContent = 'Play';
   });
-  
-
 //   prevButton.addEventListener('click', function() {
 //     currentSong++;
 //     if (currentSong <= songList.length) {
